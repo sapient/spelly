@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 
-require File.join(File.dirname(__FILE__), "..", "lib", "bloomz", "bitfield")
+require File.join(File.dirname(__FILE__), "..", "lib", "spelly", "bitfield")
 
 class TestBitField < MiniTest::Unit::TestCase
 
