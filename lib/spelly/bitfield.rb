@@ -1,4 +1,6 @@
 class BitField
+  include Enumerable
+
   attr_accessor :bits
   attr_reader :length
 
@@ -30,5 +32,9 @@ class BitField
 
   def to_s
     inject("") { |out, bit| out + bit.to_s  }
+  end
+
+  def each(&block)
+    @length.times { |ind| yield self[ind]}
   end
 end
