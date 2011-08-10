@@ -1,13 +1,7 @@
-require 'minitest/autorun'
-require 'minitest/pride'
-
+require 'test/unit'
 require File.join(File.dirname(__FILE__), "..", "lib", "spelly", "bitfield")
 
-class TestBitField < MiniTest::Unit::TestCase
-
-  def setup
-    super
-  end
+class TestBitField < Test::Unit::TestCase
 
   def test_zero_initialization
     bf = BitField.new(10)
